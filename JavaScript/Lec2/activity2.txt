@@ -1,0 +1,14 @@
+console.log(true);
+-> Output : true
+   true is Boolean so no conversion is applied. Therefore it is printed as it is.
+
+console.log(+ true);
+-> Output : 1
+   + converts the value to Number
+   true -> 1
+   false -> 0
+ 
+console.log(+ "")
+-> Output : 0
+   + converts the value to Number
+   "" (empty string) converts to 0

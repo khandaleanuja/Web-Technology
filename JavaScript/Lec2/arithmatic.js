@@ -17,16 +17,16 @@
 
 
 //Activity 2
-// console.log(true);
-// console.log(+ true);
-// console.log(+ "")
+console.log(true);
+console.log(+ true);
+console.log(+ "")
 
 
 // let getcounter = 100;
 // getcounter++
 // console.log(getcounter)
 
-let scorecounter = 200;
-scorecounter++;
-console.log(scorecounter);
+// let scorecounter = 200;
+// scorecounter++;
+// console.log(scorecounter);
 
