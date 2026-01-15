@@ -1,0 +1,47 @@
+console.log(null > 0)
+-> Output : false
+   (> < >= <=) convert values to Number
+   null -> Number(null) -> 0
+   0 > 0 --> false
+
+console.log(null == 0)
+-> Output : false
+   null is only loosely equal to undefined. It does not convert to number here
+   null == 0 --> false
+
+console.log(null <= 0)
+-> Output : true
+   null -> Number(null) -> 0
+   0 <= 0 --> true
+
+console.log(undefined > 0)
+-> Output : false
+   undefined -> Number(undefined) -> NaN
+   NaN > 0 --> false
+
+console.log(undefined == 0)
+-> Output : false
+   undefined is only equal to null
+   Not equal to 0
+   undefined == 0 --> false
+
+console.log(undefined <= 0)
+-> Output : false
+   undefined -> NaN
+   NaN <= 0 --> false
+
+console.log(undefined === 0)
+-> Output : false
+   No type conversion
+   undefined ≠ Number
+
+console.log("2" == 2)
+-> Output : true
+   Converts string to number
+   "2" ->  2
+   2  ==  2  --> true
+
+console.log("2" === 2)
+->  Output : false
+    Also check type
+        string  !==  number -->  false
