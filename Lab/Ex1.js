@@ -24,8 +24,8 @@ let email = "khandaleanuja3@gmail.com";
 
 console.log("Student information : ");
 console.log(`Name : ${name}\nAge : ${age}\nId : ${id}\nEmail : ${email}`);
-document.writeln("Student information : ")
-document.writeln(`Name : ${name}\nAge : ${age}\nId : ${id}\nEmail : ${email}`);
+document.writeln("Student information : " + "<br>")
+document.writeln(`Name : ${name}<br> Age : ${age}<br> Id : ${id}<br> Email : ${email}<br>`);
 
 
 // Activity 2
@@ -33,11 +33,11 @@ document.writeln(`Name : ${name}\nAge : ${age}\nId : ${id}\nEmail : ${email}`);
 let num = 33;
 if (num % 2 == 0){
     console.log(`${num} is even`)
-    document.writeln("Even")
+    document.writeln("Even <br>")
 }
 else{
     console.log(`${num} is odd`)
-    document.writeln("Odd")
+    document.writeln("Odd <br>")
 }
 
 
@@ -48,11 +48,11 @@ let percentage = 45;
 if (100 >= percentage >= 0 )
     if (percentage >= 40){
         console.log(`Student is pass`)
-        document.writeln("Student is pass")
+        document.writeln("Student is pass<br>")
     }
     else{
         console.log(`Student is fail`)
-        document.writeln("Student is fail")
+        document.writeln("Student is fail<br>")
     }
 
 
@@ -61,7 +61,7 @@ if (100 >= percentage >= 0 )
 // Print numbers
 for (let i = 1; i <= 10; i++){
     console.log(i * 2)
-    document.writeln(i * 2)
+    document.writeln(i * 2 + "<br>")
 }
 
 
@@ -70,4 +70,4 @@ let x = 10;
 y = x;
 x = 2001;
 console.log(x, y)
-document.writeln(x, y)
+document.writeln(x + "<br>", y)
