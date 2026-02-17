@@ -75,7 +75,7 @@
         </li>
 
         <li>
-            <a href="https://google.com" id="google">Visit Google</a>
+            <a href="https://google.com" id="google" target="_blank">Visit Google</a>
         </li>
     </ul>
   </body>
@@ -95,10 +95,22 @@
         console.log("Clicking inside the nature");
     }, false );
 
-    document.getElementById("google").addEventListener('click', function(e){
-        console.log("Google clicked");
-        e.preventDefault();
-    })
+    // document.getElementById("google").addEventListener('click', function(e){
+    //     console.log("Google clicked");
+    //     e.preventDefault();
+    // })
+
+
+    // To remove image
+    document.getElementById("images").addEventListener('click', function(e){
+        if(e.target.tagName === 'IMG'){
+            e.target.parentNode.remove();
+        }
+    }, false);
+
+    // document.getElementById("google").addEventListener('click', function(){
+    //     window.location.href ="https://google.com";
+    // }, false);
   </script>
   </html>
 
