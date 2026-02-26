@@ -33,6 +33,44 @@ console.log("End");
 /* Activities --->
     1. guess the output game count
     2. blocking and non-blocking ---> 2 examples
-    3. real time use of these in compenies
-    4. api fetch
+    3. real time use of these in compenies : 
+        1. Blocking :
+            a) Banking transaction processing
+            b) Payment gateway verification
+            c) Database migrations
+            d) Critical security checks
+        2. Non-blocking :
+            a) Chat applications (Whatsapp)
+            b) Real-time dashboards
+            c) API calls
+            d) Background notifications
+            e) Streaming apps
+
+    4. api fetch --->
+        fetch() is used to get data from server(API)
+        It returns promise
 */
+
+// Blocking
+
+console.log("Start");
+console.log("This is blocking!");
+console.log("End");
+
+
+console.log("Start");
+let sum = 0;
+for (let i = 0; i < 1000000000; i++) {
+    sum += i;
+}
+console.log("Sum calculated");
+
+
+//Non-blocking
+const fs = require("fs");
+
+fs.readFile("file.txt", (err, data) => {
+    console.log(data.toString());
+});
+
+console.log("Done");
