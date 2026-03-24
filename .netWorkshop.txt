@@ -1,0 +1,22 @@
+- OOPs concepts
+- Java -  class, obj, inheritance, data type casting, collection, exception, database connectivity, entity framework
+- Database - Sql, Pl/Sql
+- Networking - client server architecture, protocols, TCP/IP communication
+- Software Engineering - Lifecycle, agile methodoloiges (JIRA), planning implementations,  testing- manual, auto, API testing
+
+asp.net core web app
+asp.net core mvc (model-view controller) view-controller-model, model-controller-view
+web API/ REST API
+Frontend - UI Angular/REACT
+Backend - web API/REST API
+
+Full Stack Developer
+
+HTML
+CSS
+JavaScript
+
+Angular/React
+spring boot/asp.net web api/python based web api/node js
+
+Joomla/moodle/ - easy maitain the static data

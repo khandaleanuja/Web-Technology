@@ -1,0 +1,79 @@
+Unit 3 -> Express
+
+express -> It is a minimal and flexible web application framework for node js that simplifies development of web server and apis
+It provides features such as : 
+1. Routing
+2. Middle ware support
+3. Request and response handling
+4. Template rendering
+5. Rest APIs creations
+
+Steps for express project creation : 
+1. install node js
+2. nmp init
+3. npm install express
+4. Create index.js
+5. Paste express code in index.js -> Open localhost -> Hello World!
+
+
+
+Activity 1
+1. Diff between package.json and package-lcok.json
+Ans : 
+        package.json :
+        1. Contains project metadata
+        2. Lists dependencies with version ranges
+        3. Used to install package
+
+        package-lock.json :
+        1. Automatically generated flexible
+        2. Stores exact versions of installed dependencies
+        3. Ensures same installation across all systems
+        4. Improves install speed
+
+
+Activity 2
+2. Diff between dependencies and devdependencies
+Ans :
+        dependencies :
+        1. Reqired for running the application
+        2. Installed in production
+        3. Example : express, react
+
+        devdependencies :
+        1. Used only during development
+        2. Not needed in production
+        3. Example : nodemon, eslint, jest
+
+
+Activity 3
+3. Add simple js in routs
+
+Activity 4
+4. APIs(get, put, post, delete, patch)
+Ans : 
+        1. GET :
+            Used to fetch data
+        
+        2. POST :
+            Used to create new data
+        
+        3. PUT :
+            Used to update entire data
+        
+        4. PATCH :
+            Used to update partial data
+        
+        5. DELETE :
+            Used to delete data
+
+
+
+
+Routing in express :
+Routing refers to determining how application respond to a client Request for specific url and http method
+
+Components of routing :
+1. url path
+2. http methods
+3. handler function
