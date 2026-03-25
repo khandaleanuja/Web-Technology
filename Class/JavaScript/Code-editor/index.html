@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Code Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>⚡ Real-Time Code Editor</h1>
+
+  <div class="controls">
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <button onclick="downloadCode()">⬇ Download Code</button>
+  </div>
+
+  <div class="editor">
+    <textarea id="htmlCode" placeholder="Write HTML here..."></textarea>
+    <textarea id="cssCode" placeholder="Write CSS here..."></textarea>
+    <textarea id="jsCode" placeholder="Write JavaScript here..."></textarea>
+  </div>
+
+  <iframe id="output"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <h2>Change Background Color</h2>
+<button onclick="changeColor()">Change Color</button>
+
+body {
+  text-align: center;
+}
+
+function changeColor() {
+  document.body.style.background = "lightblue";
+} -->

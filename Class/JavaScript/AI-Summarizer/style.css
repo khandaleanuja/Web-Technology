@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ff9800;
+  color: white;
+}
+
+#outputText {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}

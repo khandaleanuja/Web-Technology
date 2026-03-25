@@ -10,7 +10,7 @@ It provides features such as :
 
 Steps for express project creation : 
 1. install node js
-2. nmp init
+2. npm init  -> npm = node package manager
 3. npm install express
 4. Create index.js
 5. Paste express code in index.js -> Open localhost -> Hello World!
