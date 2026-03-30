@@ -29,15 +29,6 @@ app.listen(port, () => {
 
 
 
-Activity
-1. Why we use middleware
-2. Types of middleware
-3. Middleware beneifits
-4. Company level use of middleware
-5. Detailed study of query parameter with real life examples
-6. Where use query parameter in company
-
-
 
 Handling request and respond :
 Express appplication handles http request and respond.
@@ -51,3 +42,59 @@ app.get('/', (req, res) => {
 
 
 query parameter = /user?name=anuja
+
+request.status => check http status
+request.sendfile() => send file
+
+
+
+Activity
+1. Why we use middleware
+  => 1. To check user authentication
+     2. To validate data
+     3. To log requests
+     4. To modify request/response
+     5. To handle errors
+
+
+2. Types of middleware
+  =>  1. Application-level middleware -> Apply to entire app
+      2. Router-level middleware -> Applied to specific routes
+      3. Built-in middleware -> Provided by frameworks
+      4. Third-party middleware -> Installed via npm
+      5. Error-handling middleware -> Handles error globally
+
+
+3. Middleware beneifits
+  => 1. Code reusability
+     2. Better structure (clean code)
+     3. Centralized logic
+     4. Security improvement
+     5. Easy debugging
+     6. Scalability (important in big apps)
+
+
+4. Company level use of middleware
+  => 1. Authentication and authorization
+     2. Logging and monitoring
+     3. Security
+     4. Data validation
+     5. Performance
+
+
+5. Detailed study of query parameter with real life examples
+  =>  Query parameters are used to send extra data in URL
+      ? -> starts query parameters
+      & -> separates parameters
+
+      e.g. : 
+      1. Movie platform
+      2. E-commerce
+      3. Google map
+
+
+6. Where use query parameter in company
+  => 1. Search and filtering
+     2. Pagination
+     3. Analytics
+     

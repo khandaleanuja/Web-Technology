@@ -1,0 +1,34 @@
+Template engine allows developers to create dynamic html page using data from the server.
+Instead of static html pages crested dynamically
+Popupar Template engine EJS, PUG, Handle bars.
+
+
+Why Template engine are used :
+1. Helped in dynamic content
+2. Code reusability
+3. Separate logic from html
+
+example using ejs :
+Steps :
+1. npm install ejs
+2. 
+
+
+Activity : 
+1. ejs notes
+2. What are Statisc files, Express router 
+    => Static files :
+        Files that do not change like css, images, javasrcipt
+
+       Express router :
+        Router helps to organize routes into separate files
+
+
+3. Complete express application flow 
+    => 1. Client(Browser)
+       2. Request (GET/POST)
+       3. Middleware
+       4. Router
+       5. Controller (Logic)
+       6. Response (HTML?JSON)
+       7. Client
