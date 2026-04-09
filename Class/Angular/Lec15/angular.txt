@@ -1,0 +1,18 @@
+React is a library and Angular is a framework of JS.
+
+
+Angular is a type script based frontend framework developed by Google. It helps us build a single page application(SPA)
+SPA -> Where the page does not full reload when navigation between diff views
+
+Tools for angular -> 
+1. node js
+2. npm
+3. angular CLI(Command Line Interface) used to create and manage angular apps
+
+Steps :
+1. npm install -g @angular/cli
+2. ng new file_name
+3. y -> n -> y
+4. Open VSCode
+
+To run angular project ng or ng serve
