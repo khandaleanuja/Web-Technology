@@ -1,0 +1,38 @@
+Data binding is a binding technique it converts UI and code.
+Types -> 
+1. One way :
+    a) property binding : [] = "value"  -> bind html property to ts variable
+    b) Interpolation : {{value}}  -> show data from ts to html
+    c) Event binding : (clcik) = '()'  -> call function on event
+    [(ngModel)] : 'value'  -> sinck data both ways ts to html, html to ts(type scripted)
+
+2. Two way :
+
+
+before angular 15 we need ng modules. now we are using angular 20+ versions so modules are optional. you can use standalone
+components.
+
+Directives : 
+think of directives like magic wands that can change your web page without rewriting it.
+There are 2 types of directives :
+1. Structural directives -> ngif, ngfor, ngswitch -> change structure of page like add, remove
+2. Attributes directives -> change how it looks
+
+
+Routing : 
+Navigation between one page to anaother page
+
+
+
+
+
+
+
+
+
+
+
+
+Activity 
+1. How we can use if else,for loop in angular with examples
+2. 
