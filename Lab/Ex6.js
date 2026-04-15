@@ -1,42 +1,34 @@
 const express = require('express');
-
 const app = express();
+const port = 3000;
 
-const PORT = 3000;
 
-/* -------------------- ROUTES -------------------- */
+
+app.use((req, res, next) => {
+    console.log(`Request Method: ${req.method}, URL: ${req.url}`);
+    next(); 
+});
+
+app.use(express.json());
+
 
 // Home route
 app.get('/', (req, res) => {
     res.send('Welcome to Home Page');
 });
 
-// Dynamic route with one parameter
-app.get('/user/:name', (req, res) => {
-    const name = req.params.name;
-    res.send(`Hello, ${name}!`);
+// About route
+app.get('/about', (req, res) => {
+    res.send('This is About Page');
 });
 
-// Dynamic route with multiple parameters
-app.get('/user/:name/age/:age', (req, res) => {
-    const name = req.params.name;
-    const age = req.params.age;
-    res.send(`User Name: ${name}, Age: ${age}`);
+// Contact route
+app.get('/contact', (req, res) => {
+    res.send('Contact us at anuja@gmail.com');
 });
 
-// Product route example
-app.get('/product/:id', (req, res) => {
-    const productId = req.params.id;
-    res.send(`Product ID: ${productId}`);
-});
 
-// 404 route
-app.use((req, res) => {
-    res.status(404).send('404 Page Not Found');
-});
 
-/* -------------------- START SERVER -------------------- */
-
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });
