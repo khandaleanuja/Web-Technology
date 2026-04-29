@@ -1,20 +1,32 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-student',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule], 
   templateUrl: './home.html',
-  styleUrls: ['./home.css'],
+  styleUrls: ['./home.css']
 })
-export class Home {
-  fname: string = 'Anuja';
-  myRoll: number = 123;
-  imageurl: string = 'https://via.placeholder.com/150';
+export class HomeComponent {
 
-  showButton() {
-    this.fname = 'ATK';
-    alert("Name error");
+  name: string = "Anuja";
+  roll: number = 123;
+
+  students = [
+    {name : "Anuja", roll : 1},
+    {name : "Sakshi", roll : 2},
+    {name : "Rasika", roll : 3},
+    {name : "Isha", roll : 4},
+  ]
+
+  showDetails() {
+    this.name = "Anuja";
+    alert("Button clicked!!");
   }
+
+
 }
+
+
+// Activity for directives     hide, show and toggle

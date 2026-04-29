@@ -1,12 +1,28 @@
-<p>home works!</p>
+<!-- <h2>Student Component</h2>
 
-{{fname}}
-{{myRoll}}
+<p>Name: {{name}}</p>
+<p>Roll: {{roll}}</p>
 
-<!-- One way binding -->
-<img [src]="imageurl">
+<button (click)="showDetails()">Show</button> -->
 
-<button (click)="showButton()">Show</button>
 
-<!-- Two way binding -->
-<input [(ngModel)]="fname">
+
+<h1>Student Information</h1>
+
+<!-- Display single student -->
+<p><strong>Name:</strong> {{ name }}</p>
+<p><strong>Roll No:</strong> {{ roll }}</p>
+
+<!-- Button -->
+<button (click)="showDetails()">Click Me</button>
+
+<hr>
+
+<!-- Display list of students -->
+<h2>Student List</h2>
+
+<ul>
+  <li *ngFor="let student of students">
+    {{ student.name }} - Roll No: {{ student.roll }}
+  </li>
+</ul>

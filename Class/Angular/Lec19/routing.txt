@@ -1,0 +1,13 @@
+Routing ->
+ Navigation between one page to another page.
+
+
+Steps :
+1. Open app.routes.ts then add routes of components
+2. Open app.ts and add import[RouterOutlet, RouterLink]
+3. Open app.html and add 
+    <ul>
+        <li>
+            <a routerLink = "/home">Home</a>
+        </li>
+    </ul>

@@ -42,7 +42,7 @@ async function sendMessage() {
 
   } catch (err) {
     chatBox.lastChild.remove();
-    addMessage("Server not reachable ❌", "bot");
+    addMessage("Server not reachable", "bot");
   }
 }
 

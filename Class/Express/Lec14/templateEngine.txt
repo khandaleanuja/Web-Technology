@@ -1,6 +1,6 @@
 Template engine allows developers to create dynamic html page using data from the server.
 Instead of static html pages crested dynamically
-Popupar Template engine EJS, PUG, Handle bars.
+Popupar Template engine EJS(Embedded JS Templates), PUG, Handle bars.
 
 
 Why Template engine are used :
@@ -10,7 +10,7 @@ Why Template engine are used :
 
 example using ejs :
 Steps :
-1. npm install ejs
+1. npm install express ejs
 2. 
 
 

@@ -1,0 +1,168 @@
+React ->
+    React is a JS library developed by Meta.
+    To build a fast and interactive user interfaces.
+    It is a single page application(SPA) -> page does not reload only content changed e.g. YouTube, Insta
+
+Why we use react ->
+    In traditional way :
+    1. Full page reload
+    2. Complex DOM manipulation
+    3. Hard to manage large application
+
+    Using React : 
+    1. Updates only required parts
+    2. Reusable components
+
+
+
+Virtual DOM :
+    React creates a copy of real DOM is called virtual DOM.
+    When data changes reaact updates virtual DOM.
+    Updates only changed a part(High peerformance)
+
+
+Creating project in reaact :
+1. Check node JS (node --version)
+2. Check npm (npm -v)
+3. Two waays to create react project
+   a) npx create react -app app_name
+   b) npm create vite@latest application_name
+4. Framework -> React
+5. Variant -> JS
+
+
+Vite -> fast built tool
+npm install -> install dependencies
+npm run dev -> start server
+
+index.html ->
+jsx -> JS + XML  It allows to us write HTML code inside the JS
+    const element = <h1>Hello React</h1>
+main.jsx -> It is a entry point for react application
+
+
+Rules of jsx :
+1. Must writeen single parent
+2. Use scope brackets({}) for JS
+
+
+Component : 
+components are heart of react.
+Fuctional component -> function Student(){
+    return  <h1>This is FC</h1>
+}
+
+Use component : 
+function App(){
+    return <> 
+    <Student/> 
+    </>
+}
+
+Props -Properties :
+1. Data passing from parents to child
+2. function App(){
+    return <Student name = "ATK/>
+}
+function Student(props){
+    return <h2>Name : {props.name}</h2>
+}
+
+
+
+
+
+Activity 
+1. What is differnece between angular and react
+    Angular is a typeScript framework, MVC structured, two way binding, slightly heavier performance
+    React is JS/TS library, component based, one way binding, faster performance
+
+
+2. Which has more Market hype?
+    React has more market hype becuase :
+    1. Easier to learn
+    2. Faster development
+    3. Used by big companies like Meta
+    4. Huge community support
+    5. Works well for startups
+
+
+3. Why react created
+    Problems :
+    1. Updating UI manually was Complex
+    2. DOM manipulation was slow
+    3. Code became messy in large apps
+
+    Solutions :
+    1. Virtual DOM -> faster updates
+    2. Component based UI -> Reusable code
+    3. Easier state management
+
+
+4. What is component and its types, where we use it in react with 2 examples
+    Component :
+        A component is a reusable piece of UI
+
+    Types :
+    1. Functional component -> It is just JS function that returns UI(JSX)
+        function Welcome() {
+        return <h1>Hello Anuja</h1>;
+        }
+    
+    2. Class component -> It is a JS class that extends React.Component
+        import React, { Component } from "react";
+
+        class Welcome extends Component {
+        render() {
+            return <h1>Hello Anuja</h1>;
+        }
+        }
+
+    USes :
+    1. Navbar
+    2. Login from
+    3. Dashboard
+    4. Buttons, cards
+
+
+5. What is props, why we use and types with 2 examples
+    Props :
+        Props(properties) are used to pass data from parent to child component
+
+    Use :
+        1. To make components dynamic and reusable
+        2. To pass values like name, data, functions
+
+    Types :
+        1. Primitive props(string, number, boolean) -> basic data types
+            function User(props) {
+                return (
+                    <div>
+                    <h2>Name: {props.name}</h2>
+                    <h3>Age: {props.age}</h3>
+                    <p>Is Student: {props.isStudent ? "Yes" : "No"}</p>
+                    </div>
+                    );
+            }
+
+        // Usage
+        <User name="Anuja" age={21} isStudent={true} />
+
+        2. Complex props(array, object, function) -> advanced data types
+            function Subjects(props) {
+                return (
+                    <ul>
+                    {props.subjects.map((sub, index) => (
+                        <li key={index}>{sub}</li>
+                    ))}
+                    </ul>
+                );
+            }
+
+            // Usage
+            <Subjects subjects={["Math", "AI", "ML"]} />
+
+    
+
+
+

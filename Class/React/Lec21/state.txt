@@ -1,0 +1,24 @@
+State :
+     data that can change value that changes over time.
+     when state changed -> UI
+
+
+Without :
+    1. without state value will not update on screen
+
+With state :
+    UI updates automatically
+
+
+
+
+// function App() {
+//   const [count, setCount] = useState(0)
+
+//   return (
+//     <>
+//       <StudentInfo fname="Anuja" age="21" course="AIML"/>  
+//       <Counter/>
+//     </>
+//   )
+// }

@@ -1,0 +1,11 @@
+Service :
+    service is like a helper class.
+    It is used to data or share logic that many components can be use.
+
+    Syntax to create service : ng generate service service_name
+
+
+
+    Activity 
+    write two examples with services with angular and learn more about dependencies injection
+    
