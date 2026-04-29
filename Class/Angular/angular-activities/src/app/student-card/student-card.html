@@ -1,0 +1,26 @@
+//activity 1
+<div class="card">
+  <img [src]="imageUrl" width="150" />
+  <h2>{{ name }}</h2>
+  <p>{{ course }}</p>
+
+  <button (click)="changeImage()">Change Image</button>
+
+  <input [(ngModel)]="text" placeholder="Type here..." />
+
+    <p>Live Preview: {{ text }}</p>
+    <p>Character Count: {{ text.length }}</p>
+
+
+    <h2 *ngIf="isVisible">Hello Student</h2>
+
+    <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+
+    <div [ngStyle]="{'color': isRed ? 'red' : 'blue'}">
+    Color Changing Text
+    </div>
+
+    <button (click)="toggle()">Toggle</button>
+</div>
