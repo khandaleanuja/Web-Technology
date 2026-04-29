@@ -1,0 +1,10 @@
+Hooks :
+hooks are special functions in react that let you use features like state and lifecycle in functional components
+
+
+lifecycle :
+ the diff stages a components goes trough from creation to removal
+
+ 1. Mounting -> creating a component
+ 2. Updating
+ 3. Unmounting -> component is removed from screen

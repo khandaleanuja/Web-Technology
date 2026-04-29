@@ -22,3 +22,12 @@ With state :
 //     </>
 //   )
 // }
+
+
+
+
+
+States :
+data that can change over time and affects UI
+when state changes -> UI automatically changes
+used for dynamic behavior
