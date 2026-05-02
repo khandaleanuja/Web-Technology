@@ -1,0 +1,13 @@
+<h2>Users List</h2>
+
+<!-- Loading -->
+<div *ngIf="loading">
+  <p>Loading...</p>
+</div>
+
+<!-- Users -->
+<div *ngIf="!loading">
+  <div *ngFor="let user of users">
+    <p><b>{{user.name}}</b> - {{user.email}}</p>
+  </div>
+</div>

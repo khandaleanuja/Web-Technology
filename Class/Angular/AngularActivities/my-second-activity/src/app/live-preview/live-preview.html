@@ -1,0 +1,19 @@
+<p>live-preview works!</p>
+<div class="container">
+
+  <h2>Live Input Preview</h2>
+
+  <!-- Input Box -->
+  <input 
+    type="text" 
+    [(ngModel)]="userText" 
+    placeholder="Type something..."
+  />
+
+  <!-- Live Preview -->
+  <p>Preview: {{ userText }}</p>
+
+  <!-- Character Count -->
+  <p>Character Count: {{ userText.length }}</p>
+
+</div>

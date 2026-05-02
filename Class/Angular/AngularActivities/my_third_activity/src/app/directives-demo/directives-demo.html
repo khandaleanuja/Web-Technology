@@ -1,0 +1,39 @@
+<h2>Angular Directives Demo</h2>
+
+<!-- 🔹 ngIf -->
+<button (click)="toggle()">Toggle Message</button>
+
+<div *ngIf="show">
+  <p>This is shown using *ngIf</p>
+</div>
+
+<hr>
+
+<!-- ngFor -->
+<div>
+  <h3>Student List</h3>
+  <div *ngFor="let s of students">
+    {{s}}
+  </div>
+</div>
+
+<hr>
+
+<!-- 🔹 ngClass -->
+<div [ngClass]="{'active': isActive}">
+  This uses ngClass
+</div>
+
+<button (click)="isActive = !isActive">
+  Toggle Class
+</button>
+
+<hr>
+
+<!-- 🔹 ngStyle -->
+<div [ngStyle]="{'color': color}">
+  This text color changes
+</div>
+
+<button (click)="color = 'red'">Red</button>
+<button (click)="color = 'green'">Green</button>
